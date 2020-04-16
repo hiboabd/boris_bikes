@@ -3,19 +3,20 @@ class DockingStation
   attr_reader :shed
 
   def initialize
-    @shed = []
+    @shed = nil
   end
 
   def release_bike
-      if @shed.empty?
-        fail 'Error: shed empty'
-      else
-        Bike.new
-      end
+
+    if @shed == nil 
+      fail 'Error: shed empty' # in spec had to dock something on earlier tests to stop this code running
+    else
+      Bike.new
+    end
   end
 
   def dock(bike)
-    @shed.push(bike)
+    @shed = bike
   end
 
 end
