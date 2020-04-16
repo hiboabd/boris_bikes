@@ -1,4 +1,4 @@
-Boris Bikes task
+User Stories task
 
 * Write down all the nouns in the User Stories
 
@@ -22,3 +22,6 @@ Docking station	release_bike
 3. The person uses the bike to check whether the bike is working.
 4. The docking station will check the status of the bike (i.e. whether it is working).
 5. The docking station will release the bike if it is working.
+
+Bike <-- working? --> true/false
+DockingStation <-- release_bike --> a Bike
